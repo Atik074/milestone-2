@@ -1,5 +1,5 @@
 .row{
-    height:400px;
+    /* height:400px; */
     margin-bottom:5px;
 }
 img{
@@ -35,9 +35,25 @@ height:100%;
     display: grid;
     gap:5px;
     grid-template-columns: repeat(2,1fr);
-    overflow: hidden;
-     
-  
+    overflow: hidden;  
+}
+
+/* responsive */
+@media screen and (max-width:576px) {
+    .second-container, .third-container{
+        flex-direction: column;
+       
+    }
+    .jhamela{
+       grid-template-columns: repeat(1,fr);
+    }
+}
+@media  screen and (min-width:577px) {
+
+    .row{
+        height:400px;
+    }
+    
 }
 
 
